@@ -1,0 +1,244 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPVfrqMqQ56XKUzX+0eQxxR",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/kurva-karthik/All-about-python/blob/main/problems%20on%20operators%20in%20python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "q1acl-0Ec42P",
+        "outputId": "6a4a472d-16a2-4255-ea1d-c923ab3c96c0"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the number8\n",
+            "enter the number2\n",
+            "the result is 8.0 and 2.0 is: 10.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "first_num = float(input(\"enter the number\"))\n",
+        "second_num = float(input(\"enter the number\"))\n",
+        "result = first_num + second_num\n",
+        "print(f\"the result is {first_num } and {second_num} is: {result}\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num1 = float(input(\"enter the first number\"))\n",
+        "num2 = float(input(\"enter the second number\"))\n",
+        "result = num1 * num2\n",
+        "print(f\"the multiply is {num1} and {num2} are : {result}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AFBHk8vyfKBK",
+        "outputId": "8c171dfa-20c1-46db-a14f-9b0e10be2bc0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the first number7\n",
+            "enter the second number3\n",
+            "the multiply is 7.0 and 3.0 are : 21.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num_1 = int(input(\"enter the number\"))\n",
+        "num_2 = int(input(\"enter the number\"))\n",
+        "result = num_1 == num_2\n",
+        "print(f\"are {num_1} and {num_2} equal ? {result}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AjaWetmJgKIL",
+        "outputId": "4895b87a-1c63-4820-b0eb-468062e897e2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the number12\n",
+            "enter the number10\n",
+            "are 12 and 10 equal ? False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "number_1 = float(input(\"enter the number\"))\n",
+        "number_2 = float(input(\"enter the number\"))\n",
+        "result = number_1 and  number_2 > 0\n",
+        "print(f\"the numbers {number_1} and {number_2} positive : {result}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "srAeetL0g5T6",
+        "outputId": "7b453980-b94d-41c1-9f72-4fdaffc66d16"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the number12\n",
+            "enter the number-1\n",
+            "the numbers 12.0 and -1.0 positive : False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num_1 = float(input(\"enter the number\"))\n",
+        "num_2 = float(input(\"enter the number\"))\n",
+        "num_3 = float(input(\"enter the number\"))\n",
+        "result = (num_1 + num_2 + num_3) / 3\n",
+        "print(f\"the result of {num_1} , {num_2} , and {num_3} are :{result}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FpgNC7vNlCaK",
+        "outputId": "cba34803-766e-4b1a-ed54-d19bd9e8b8a4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the number3\n",
+            "enter the number3\n",
+            "enter the number3\n",
+            "the result of 3.0 and 3.0 and 3.0 are :3.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "<!-- if , elif , else statements -->"
+      ],
+      "metadata": {
+        "id": "VnV8YkIH-V4a"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# if , elif , else statements in python\n",
+        "# checking weather based on temparature\n",
+        "temp = int(input(\"enter the number\"))\n",
+        "if(temp > 30):\n",
+        "  print(\"today is very hot day\")\n",
+        "elif(temp < 30):\n",
+        "  print(\"today is the normal day\")\n",
+        "elif(temp <= 20):\n",
+        "  print(\"it is cold day\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UGdApSxs-TY8",
+        "outputId": "c8d52d46-cccf-4acc-c1cf-9ddff7a2dc9e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the number100\n",
+            "today is very hot day\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# checking the age for ticket pricing\n",
+        "age = int(input(\"enter your age\"))\n",
+        "if(age > 25):\n",
+        "  print(\"adult ticket 100\")\n",
+        "elif(age <= 20):\n",
+        "  print(\"very teen 25\")\n",
+        "elif(age < 5):\n",
+        "  print(\"free entry 0\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "He99t7Lq_kh1",
+        "outputId": "f04cb1d2-95d5-4286-892f-fb73cf32f2b2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter your age5\n",
+            "very teen 25\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
