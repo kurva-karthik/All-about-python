@@ -1,0 +1,203 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOFyj5OeobPBlmMpgsw0m3u",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/kurva-karthik/All-about-python/blob/main/Real%20world%20problems%20using%20operators%20in%20python%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "M9lN8ig83kOc",
+        "outputId": "0b9d804d-f99e-4733-88d0-588caae0a2ad"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter your age61\n",
+            "you are eligible for a seniour citizen discount\n"
+          ]
+        }
+      ],
+      "source": [
+        "# seniour citizen eligibility\n",
+        "age = int(input(\"enter your age\"))\n",
+        "if age >= 60:\n",
+        "  print(\"you are eligible for a seniour citizen discount\")\n",
+        "else:\n",
+        "  print(\"you are not eligible\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# take input from the user and store in three variables\n",
+        "num1 = float(input(\"enter the first number\"))\n",
+        "num2 = float(input(\"enter the second number\"))\n",
+        "num3 = float(input(\"enter the third number\"))\n",
+        "if num1 >= num2 and num1 >= num3:\n",
+        "  print(f\"the largest number is : {num1}\")\n",
+        "elif num2 >= num3 and num2 >= num1:\n",
+        "  print(f\"the largest number is : {num2}\")\n",
+        "else :\n",
+        "  print(f\"the largest number is : {num3}\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "ww1NLKF07cFz",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "d26f3d62-cf05-448c-cd67-137af6fb51b2"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the first number20\n",
+            "enter the second number15\n",
+            "enter the third number17\n",
+            "the largest number is : 20.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# applyting discount on bill problem\n",
+        "\n",
+        "# taking input to the user\n",
+        "total_bill = int(input(\"enter the amount of total bill : \"))\n",
+        "\n",
+        "if total_bill > 1000:\n",
+        "   discount = total_bill * 0.1\n",
+        "   final_amount = total_bill - discount\n",
+        "   print(f\"the final amount to be paid is : {final_amount}\")\n",
+        "else :\n",
+        "  final_amount = total_bill\n",
+        "  print(f\"there is no discount on your bill : {final_amount}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "upBaf-G2gYYC",
+        "outputId": "3e9886f5-13c8-4898-b0d8-d99b8479fe48"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the amount of total bill : 1200\n",
+            "the final amount to be paid is : 1080.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# taking the input from the user for checking its weekend or not\n",
+        "day = str(input(\"enter the day\"))\n",
+        "if day == \"saturday\" or day == \"sunday\":\n",
+        "  print(\"its a weekend :\")\n",
+        "else:\n",
+        "  print(\"its not a weekend :\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GiUwZfsDgYHg",
+        "outputId": "9fa41ac7-a970-4386-fe03-039d488ba195"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the daysunday\n",
+            "its a weekend\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# use the \"=\" operator to store predifined username and password\n",
+        "saved_username = \"karthik\"\n",
+        "saved_password = \"karthik12345\"\n",
+        "\n",
+        "username = input(\"enter your username :\")\n",
+        "password = input(\"enter your password :\")\n",
+        "\n",
+        "if username == saved_username and password == saved_password:\n",
+        "  print(\"you are successfully login\")\n",
+        "else:\n",
+        "  print(\"invalid credentials\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pAvzHjGzkqCp",
+        "outputId": "b7debf61-f260-4c77-f025-c6732bba01f4"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter your username :karthik\n",
+            "enter your password :karthik12345\n",
+            "you are successfully login\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "BUCk-pMokp4E"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
