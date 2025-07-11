@@ -1,0 +1,101 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOO6qFNNzbly0H0tUkx21Wt",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/kurva-karthik/All-about-python/blob/main/age%20eligibility%20using%20operators%20in%20python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7st3iuiQZ5DL",
+        "outputId": "6dbd0f27-be95-464a-cf7c-6fa9dd2eac1b"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the number20\n",
+            "you r eligible to vote\n"
+          ]
+        }
+      ],
+      "source": [
+        "# check the age to eligible for vote\n",
+        "age = int(input(\"enter the number\"))\n",
+        "if(age >= 18):\n",
+        "  print(\"you r eligible to vote\")\n",
+        "else:\n",
+        "  print(\"you r not eligible to vote\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "6zysS_BOldGe"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "has_invitation = input(\"do you have an invitation? yes/no\")\n",
+        "is_banned = input(\"are you banned yes/no\")\n",
+        "is_VIP = input(\"you r VIP yes/no\")\n",
+        "\n",
+        "if (has_invitation  == \"yes\") and (is_banned == \"no\"):\n",
+        "  print(\"allowed to enter\")\n",
+        "elif (has_invitation == \"no\") and (is_VIP == \"yes\"):\n",
+        "  print(\"allowed to enter\")\n",
+        "else :\n",
+        "  print(\"entry is denied\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0YhDZXsscQqi",
+        "outputId": "5363f616-d54e-44ae-d3cc-6ae9bff4c304"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "do you have an invitation? yes/noyes\n",
+            "are you banned yes/noyes\n",
+            "you r VIP yes/nono\n",
+            "entry is denied\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
