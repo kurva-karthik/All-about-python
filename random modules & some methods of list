@@ -1,0 +1,292 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOxHgP7Xvmv9n4ovBOZxm18",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/kurva-karthik/All-about-python/blob/main/random%20modules%20%26%20some%20methods%20of%20list\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "l8OeWnAGwFIp",
+        "outputId": "96f8171c-ff06-439a-d1f1-55dcbc59e953"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0.3462908811274773\n",
+            "heads\n",
+            "2\n",
+            "2\n"
+          ]
+        }
+      ],
+      "source": [
+        "# topic randam module\n",
+        "# 1) random()\n",
+        "# 2)randint(a,b)\n",
+        "# 3)randrange(start,stop,step)\n",
+        "# 4)range(start,stop,step)\n",
+        "# import random\n",
+        "# a = random.random()\n",
+        "# print(a)\n",
+        "\n",
+        "# for example tossing a coin like real world eample\n",
+        "import random\n",
+        "result = random.random()\n",
+        "print(result)\n",
+        "\n",
+        "if(result < 0.5):\n",
+        "  print(\"heads\")\n",
+        "elif(result > 0.5):\n",
+        "  print(\"tail\")\n",
+        "\n",
+        "# randint\n",
+        "a = random.randint(1,10)\n",
+        "print(a)\n",
+        "\n",
+        "k = random.randint(1,6)\n",
+        "print(k)\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# A simple real-world example :lucky draw\n",
+        "# there are 100 participants and you nedd to randomly select a winner participant\n",
+        "# randint\n",
+        "import random\n",
+        "a = 1\n",
+        "b  = 100\n",
+        "winner = random.randint(a,b)\n",
+        "print(\"winner is\", winner)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9C1hWcC_Kthi",
+        "outputId": "88153cf0-5482-4bec-f145-cadbc08ca795"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "winner is 32\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# randrange\n",
+        "import random\n",
+        "k = random.randrange(10,20)\n",
+        "print(\"the number is\",k)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "S_sizPs5Om-v",
+        "outputId": "774b6985-768f-4481-c467-fb3a3438741c"
+      },
+      "execution_count": 88,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "the number is 10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# range\n",
+        "# imagine if i can give the annocement in bus stop for busses and its timings 9am,12pm,3pm\n",
+        "a = range(9,16,3)\n",
+        "first,second,third = a\n",
+        "print(f\"the bus is {first}\")\n",
+        "print(f\"the bus is {second}\")\n",
+        "print(f\"the bus is {third}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "w8GTy0thP-IG",
+        "outputId": "1e26ad80-a81c-43eb-cc9f-bbc0cc89450d"
+      },
+      "execution_count": 100,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "the bus is 9am\n",
+            "the bus is 12pm\n",
+            "the bus is 15pm\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# list and indexing with list\n",
+        "list = [1,2,3,4,5,6,\"karthik\",\"string\"]\n",
+        "print(list)\n",
+        "print(list[0])\n",
+        "print(list[5])\n",
+        "print(list[2:6])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BiKLApCZe5vf",
+        "outputId": "66ecd4e5-0ded-4a85-9695-b41c36360cee"
+      },
+      "execution_count": 104,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 2, 3, 4, 5, 6, 'karthik', 'string']\n",
+            "1\n",
+            "6\n",
+            "[3, 4, 5, 6]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# here we can see the slicing in list\n",
+        "shopping_list = [\"brush\",\"cloths\",\"fruits\",\"pants\",\"bat\"]\n",
+        "print(len(shopping_list))\n",
+        "print(shopping_list[0])\n",
+        "print(shopping_list[0:3])\n",
+        "print(shopping_list[:])\n",
+        "print(shopping_list[-1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rRiIQ3T2p0K_",
+        "outputId": "a2da7537-1708-4733-fcf2-4680fabca563"
+      },
+      "execution_count": 113,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "brush\n",
+            "['brush', 'cloths', 'fruits']\n",
+            "['brush', 'cloths', 'fruits', 'pants', 'bat']\n",
+            "bat\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# replacing elements in list\n",
+        "# bat ~ ball\n",
+        "shopping_list = [\"brush\",\"cloths\",\"fruits\",\"pants\",\"bat\"]\n",
+        "shopping_list[4]=\"ball\"\n",
+        "print(shopping_list)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EEBH1cSmrCFm",
+        "outputId": "f7222529-0286-42e3-cb2d-53ad4493d937"
+      },
+      "execution_count": 114,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['brush', 'cloths', 'fruits', 'pants', 'ball']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# removing the elements\n",
+        "shopping_list = [\"brush\",\"cloths\",\"fruits\",\"pants\",\"bat\"]\n",
+        "shopping_list.pop(4)\n",
+        "print(shopping_list)\n",
+        "# adding the elements\n",
+        "shopping_list = [\"brush\",\"cloths\",\"fruits\",\"pants\",\"bat\"]\n",
+        "shopping_list.append(\"doll\")\n",
+        "print(shopping_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "X0kFf4I3rn3s",
+        "outputId": "14084706-50fb-490f-cf26-2886c71c9c06"
+      },
+      "execution_count": 119,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['brush', 'cloths', 'fruits', 'pants']\n",
+            "['brush', 'cloths', 'fruits', 'pants', 'bat', 'doll']\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
